@@ -1,0 +1,20 @@
+[project]
+name = "identity-access-audit"
+version = "0.1.0"
+description = "Offline identity and access audit tool for analyzing CSV/JSON exports."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+identity-access-audit = "identity_access_audit.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
